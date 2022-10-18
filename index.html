@@ -1,39 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <!-- not sure how to get the css file to match the example-->
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <!-- div for the time and date. borrowed from webfx for adding moment js -->
+  <h2>Moment Date</h2>
+  <div id="displayMoment"></div> <h2>JavaScript Date</h2>
+  <div id="displayJsDate"></div>
+  <script type="text/javascript"></script>
+
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <section class="container">
+  <form id="schedule">
+    <!-- Timeblocks go here -->
+    <div class="row">
+      <div class="col-12">
+        <label for="nine">9:00am</label>
+        <input type="text" class="form-input" name="nine" placeholder="enter meeting"/>
+
     </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="ten">10:00am</label>
+        <input type="text" class="form-input" name="ten" placeholder="enter meeting"" />        
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="eleven">11:00am</label>
+        <input type="text" class="form-input" name="eleven" placeholder="enter meeting"/>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="twelve">12:00pm</label>
+        <input type="text" class="form-input" name="twelve" placeholder="enter meeting"/>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="one">1:00pm</label>
+        <input type="text" class="form-input"name="one" placeholder="enter meeting" />
+      </div>
+    </div>
+    </div> <div class="row">
+      <div class="col-12">
+        <label for="two">2:00pm</label>
+        <input type="text" class="form-input" name="two" placeholder="enter meeting"/>
+      </div>
+    </div>
+    </div> <div class="row">
+      <div class="col-12">
+        <label for="three">3:00pm</label>
+        <input type="text" class="form-input" name="three" placeholder="enter meeting"/>
+      </div>
+    </div>
+    </div> <div class="row">
+      <div class="col-12">
+        <label for="four">4:00pm</label>
+        <input type="text" class="form-input" name="four" placeholder="enter meeting"/>
+      </div>
+    </div>
+    </div> <div class="row">
+      <div class="col-12">
+        <label for="five">5:00am</label>
+        <input type="text" class="form-input" name="five" placeholder="enter meeting"/>       
+      </div>
+    </div>
+    </div>
+    <button class="btn btn-block btn-primary">Save.</button>
+  </form>
+  </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js"></script>
+  <link href="./assets/script.js" />
+</body>
+
 </html>
 <!-- starter code was given-->
