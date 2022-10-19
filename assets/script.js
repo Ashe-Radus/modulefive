@@ -1,28 +1,33 @@
 //this will hold user input and save it to the local storage. 
 
 var formEl = $('#schedule');
-var nineEl = $('input[name="nine"]');
-var tenEl = $('input[name="ten"]');
-var elevenEl = $('input[name="eleven"]');
-var twelveEl = $('input[name="twelve"]');
-var oneEl = $('input[name="one"]');
-var twoEl = $('input[name="two"]');
-var threeEl = $('input[name="three"]');
-var fourEl = $('input[name="four"]');
-var fiveEl = $('input[name="five"]');
-//var textEl =$('input[text]');
+var meetingsListEl = $('#meeting-list');
 
 function handleFormSubmit(event){
-event.preventDefault();
+    event.preventDeafult();
+    var nineEl = $('input.[name="nine"]').val();
+    var tenEl = $('input[name="ten"]').val();
+    var elevenEl = $('input[name="eleven"]').val();
+    var twelveEl = $('input[name="twelve"]').val();
+    var oneEl = $('input[name="one"]').val();
+    var twoEl = $('input[name="two"]').val();
+    var threeEl = $('input[name="three"]').val();
+    var fourEl = $('input[name="four"]').val();
+    var fiveEl = $('input[name="five"]').val();
 
-var meetingItem = $('input[name="nine"]').val();
+console.log(nineEl);
+console.log(tenEl);
+console.log(elevenEl);
+console.log(twelveEl);
+console.log(oneEl);
+console.log(twoEl);
+console.log(threeEl);
+console.log(fourEl);
+console.log(fiveEl);
 
-console.log('nine:', nineEl.val());
-console.log('ten:', tenEl.val());
+formEl.append();
 }
-//localStorage.setItem('text');
-
-formEl.on('submit',handleFormSubmit);
+formEl.on('submit', handleFormSubmit); 
 
 //borrowed from webfx for how to add moment js 
 (function() {
@@ -30,3 +35,4 @@ formEl.on('submit',handleFormSubmit);
     var NowDate = new Date(); 
     var eDisplayMoment = document.getElementById('displayMoment'); eDisplayMoment.innerHTML = NowMoment
     var eDisplayDate = document.getElementById('displayJsDate'); eDisplayDate.innerHTML = NowDate; })(); 
+
